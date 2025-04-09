@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'EuclidCircularB';
+  src: url('https://ext.same-assets.com/35667063/4000960528.false') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'EuclidCircularB';
+  src: url('https://ext.same-assets.com/35667063/333614594.false') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 3%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 3%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 0 0% 10%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 10%;
+    --input: 0 0% 10%;
+    --ring: 0 0% 100%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'EuclidCircularB', sans-serif;
+  }
+}
+
+.skillicon{
+  height: 96px;
+  width: 96px;
+}
+
+.box {
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.5s ease-out;
+  cursor: pointer;
+}
+
+.box:hover {
+  transform: scale(1.05) !important;
+}
+
+.box.is--1 {
+  width: 45vh;
+  height: 45vh;
+  left: 10%;
+  top: 20%;
+  position: absolute;
+  background-image: url('../../public/uploads/Main.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+/* .box.is--1 {
+  width: 45vh;
+  height: 45vh;
+  left: 10%;
+  top: 20%;
+  background-image: url('../uploads/Main.jpeg');
+  position: absolute;
+} */
+
+.box.is--2 {
+  width: 35vh;
+  height: 35vh;
+  left: 50%;
+  top: 10%;
+  background-image: url('https://ext.same-assets.com/35667063/1814730720.jpeg');
+  position: absolute;
+}
+
+.box.is--3 {
+  width: 40vh;
+  height: 40vh;
+  left: 70%;
+  top: 35%;
+  background-image: url('https://ext.same-assets.com/35667063/3680071422.jpeg');
+  position: absolute;
+}
+
+.box.is--4 {
+  width: 30vh;
+  height: 30vh;
+  left: 40%;
+  top: 60%;
+  background-image: url('https://ext.same-assets.com/35667063/3216879744.jpeg');
+  position: absolute;
+}
+
+.box.is--5 {
+  width: 25vh;
+  height: 25vh;
+  left: 15%;
+  top: 65%;
+  background-image: url('https://ext.same-assets.com/35667063/4119515971.jpeg');
+  position: absolute;
+}
+
+.box.is--6 {
+  width: 20vh;
+  height: 20vh;
+  left: 75%;
+  top: 75%;
+  background-image: url('https://ext.same-assets.com/35667063/3662098538.jpeg');
+  position: absolute;
+}
+
+.box.is--7 {
+  width: 15vh;
+  height: 15vh;
+  left: 60%;
+  top: 85%;
+  background-image: url('https://ext.same-assets.com/35667063/846137503.jpeg');
+  position: absolute;
+}
+
+.work {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+.section.is--hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
