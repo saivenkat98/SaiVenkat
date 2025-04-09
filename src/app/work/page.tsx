@@ -18,17 +18,49 @@ export default function WorkPage() {
         className="container mx-auto pt-32 px-6"
       >
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-medium mb-3">My Resume</h1>
-          <p className="text-white/60 mb-4">learn more about me!</p>
-          <div className="flex justify-end mb-3" >
-          <a
-            href="/uploads/myDocument.pdf"
-            download
-            className="flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium"
-          >
-            Download PDF
-            <Download size={20} />
-          </a>
+          <div className="mt-10">
+            <h2 className="text-3xl md:text-4xl font-medium mb-3">Follow My Work Here</h2>
+            <ul className="flex space-x-6 items-center mb-6">
+              <li>
+                <a
+                  href="https://github.com/saivenkat98/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="w-[45px] h-[45px]"
+                    src="/uploads/GitHubIcon.png"
+                    alt="GitHub Icon"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/sai-venkat-kumar-rapol-897895159/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="w-[50px] h-[50px]"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+                    alt="LinkedIn Icon"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <br/>
+          <h2 className="text-3xl md:text-4xl font-medium mb-3">My Resume</h2>
+          <p className="text-white/60 mb-4">To learn more about me!</p>
+          <div className="flex justify-end mb-3">
+            <a
+              href="/uploads/myDocument.pdf"
+              download
+              className="flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium"
+            >
+              Download PDF
+              <Download size={20} />
+            </a>
           </div>
           <div className="aspect-video rounded-xl overflow-y mb-12">
             <div>
@@ -37,7 +69,7 @@ export default function WorkPage() {
           </div>
           <div className="border-t border-white/10 pt-8 mb-20">
             <Link
-              href="/about"
+              href="/"
               className="inline-flex items-center text-white hover:text-white/70 transition-colors"
             >
               <svg

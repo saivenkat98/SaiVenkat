@@ -20,7 +20,17 @@ export default function AboutPage() {
           <h1 className="text-4xl md:text-6xl font-medium mb-16">Welcome!</h1>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
-            <div>
+            {/* IMAGE — appears below text on mobile, right on desktop */}
+            <div className="order-1 md:order-2">
+              <Image
+                src={AboutMeImage}
+                alt="About Me"
+                className="rounded-xl"
+              />
+            </div>
+
+            {/* TEXT — appears first on mobile */}
+            <div className="order-2 md:order-1">
               <h2 className="text-2xl font-medium mb-6">
                 Hey there! I'm Sai Venkat — a software developer based in San
                 Francisco.
@@ -37,12 +47,10 @@ export default function AboutPage() {
                 you're looking for a curious, committed, and collaborative
                 software engineer to join your mission — let's connect!
               </p>
-              <br />
-              <br />
-              <br />
-              <div>
-                <h3 className="text-2xl font-medium mb-6">Follow My Work</h3>
-                <ul className="grid grid-cols-1 md:grid-cols-6 gap-5">
+
+              <div className="mt-10">
+                <h3 className="text-2xl font-medium mb-6">Follow My Work Here</h3>
+                <ul className="flex space-x-6 items-center">
                   <li>
                     <a
                       href="https://github.com/saivenkat98/"
@@ -50,10 +58,11 @@ export default function AboutPage() {
                       rel="noopener noreferrer"
                     >
                       <img
+                        className="w-[50px] h-[50px]"
                         src="/uploads/GitHubIcon.png"
                         alt="GitHub Icon"
                       />
-                    </a>{" "}
+                    </a>
                   </li>
                   <li>
                     <a
@@ -61,74 +70,41 @@ export default function AboutPage() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
-                    />
-                    </a>{" "}
+                      <img
+                        className="w-[50px] h-[50px]"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+                        alt="LinkedIn Icon"
+                      />
+                    </a>
                   </li>
                 </ul>
               </div>
             </div>
-
-            <div>
-              <Image src={AboutMeImage} alt="About Me" className="rounded-xl" />
-            </div>
           </div>
 
+          {/* SKILLS SECTION */}
           <div className="mb-20">
             <h2 className="text-2xl font-medium mb-6">Skills</h2>
-            <ul className="grid grid-cols-1 md:grid-cols-9 gap-4">
-              <li>
-                <img
-                  className="skillicon"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg"
-                />
-              </li>
-              <li>
-                <img
-                  className="skillicon"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"
-                />
-              </li>
-              <li>
-                <img
-                  className="skillicon"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-                />
-              </li>
-              <li>
-                <img
-                  className="skillicon"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-                />
-              </li>
-              <li>
-                <img
-                  className="skillicon"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
-                />
-              </li>
-              <li>
-                <img
-                  className="skillicon"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
-                />
-              </li>
-              <li>
-                <img
-                  className="skillicon"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
-                />
-              </li>
-              <li>
-                <img
-                  className="skillicon"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"
-                />
-              </li>
-              <li>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" />
-              </li>
+            <ul className="grid grid-cols-3 sm:grid-cols-6 md:grid-cols-9 gap-4">
+              {[
+                "java/java-original-wordmark.svg",
+                "python/python-original-wordmark.svg",
+                "javascript/javascript-original.svg",
+                "react/react-original.svg",
+                "nodejs/nodejs-original-wordmark.svg",
+                "nextjs/nextjs-original.svg",
+                "mysql/mysql-original-wordmark.svg",
+                "mongodb/mongodb-original-wordmark.svg",
+                "git/git-original-wordmark.svg",
+              ].map((icon, i) => (
+                <li key={i}>
+                  <img
+                    className="w-[50px] h-[50px]"
+                    src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${icon}`}
+                    alt="Skill Icon"
+                  />
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -136,6 +112,7 @@ export default function AboutPage() {
     </main>
   );
 }
+
 
 
 // IGNORE THIS BELOW CODE; IN PLACE FOR FUTURE UPGRADES TO THE WEBSITE
