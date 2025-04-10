@@ -32,8 +32,7 @@ export default function AboutPage() {
             {/* TEXT — appears first on mobile */}
             <div className="order-2 md:order-1">
               <h2 className="text-2xl font-medium mb-6">
-                Hey there! I'm Sai Venkat — a software developer based in San
-                Francisco.
+                Hey there! I'm Sai Venkat — a software developer based in Atlanta.
               </h2>
               <p className="text-white/80 mb-4">
                 I'm passionate about building systems that work, breaking the
