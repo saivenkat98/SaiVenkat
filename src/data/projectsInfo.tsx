@@ -44,6 +44,15 @@ export interface ProjectInfo {
         liveLink: "",
         image: "/uploads/MRSI.png",
         Skills: ["Javascript","ReactJs", "Java","JSoup"]
+    },
+    {
+        id: 5,
+        title: "My Portfolio",
+        description: "A digital diary of my journey as a software engineer, built with TypeScript and Next.js.",
+        gitLink: "https://github.com/saivenkat98/SaiVenkat",
+        liveLink: "https://sai-venkat.vercel.app/",
+        image: "/uploads/PortfolioImage.png",
+        Skills: ["Typescript","ReactJs", "NextJs","TailwindCSS", "EmailJs"]
     }
   ];
   
