@@ -18,55 +18,73 @@ export default function WorkPage() {
         className="container mx-auto pt-32 px-6"
       >
         <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-medium mb-3">
+            My Experience
+          </h2>
+          <p className="text-white/60 mb-2">
+            I am a Full-stack developer with 3+ years of experience building
+            scalable microservices, APIs, and responsive UIs using Java, Spring,
+            and modern JavaScript frameworks.
+          </p>
           <div className="mt-10">
-            <h2 className="text-3xl md:text-4xl font-medium mb-3">Follow My Work Here</h2>
+            <h2 className="text-xl md:text-xl font-medium mb-3">
+              Follow My Work Here
+            </h2>
+
             <ul className="flex space-x-6 items-center mb-6">
-              <li>
+              <li className="relative group flex justify-center">
                 <a
                   href="https://github.com/saivenkat98/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img
-                    className="w-[45px] h-[45px]"
+                    className="w-[40px] h-[40px] transition-transform duration-300 ease-in-out transform group-hover:scale-110"
                     src="/uploads/GitHubIcon.png"
                     alt="GitHub Icon"
                   />
+                  <span className="absolute bottom-[-2.1rem] text-xs text-white bg-gray-800 px-3 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10">
+                        Click me!
+                      </span>
                 </a>
               </li>
-              <li>
+              <li className="relative group flex justify-center">
                 <a
                   href="https://www.linkedin.com/in/sai-venkat-kumar-rapol-897895159/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img
-                    className="w-[50px] h-[50px]"
+                    className="w-[40px] h-[40px] transition-transform duration-300 ease-in-out transform group-hover:scale-110"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
                     alt="LinkedIn Icon"
                   />
+                  <span className="absolute bottom-[-2.1rem] text-xs text-white bg-gray-800 px-3 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10">
+                        Click me!
+                      </span>
                 </a>
               </li>
             </ul>
+            <br/>
+            {/* Move the download button below */}
+            <div className="flex justify-start mb-1">
+              <a
+                href="/uploads/myDocument.pdf"
+                download
+                className="flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium"
+              >
+                Download PDF
+                <Download size={20} />
+              </a>
+            </div>
           </div>
-          <br/>
-          <h2 className="text-3xl md:text-4xl font-medium mb-3">My Resume</h2>
-          <p className="text-white/60 mb-4">To learn more about me!</p>
-          <div className="flex justify-end mb-3">
-            <a
-              href="/uploads/myDocument.pdf"
-              download
-              className="flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium"
-            >
-              Download PDF
-              <Download size={20} />
-            </a>
-          </div>
+
           <div className="aspect-video rounded-xl overflow-y mb-12">
             <div>
               <Image src={MyResume} alt="About Me" className="rounded-xl" />
             </div>
           </div>
+          <br />
           <div className="border-t border-white/10 pt-8 mb-20">
             <Link
               href="/"
