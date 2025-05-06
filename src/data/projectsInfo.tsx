@@ -29,6 +29,33 @@ export interface ProjectInfo {
     },
     {
         id: 3,
+        title: "My Portfolio",
+        description: "A digital diary of my journey as a software engineer, built with TypeScript and Next.js.",
+        gitLink: "https://github.com/saivenkat98/SaiVenkat",
+        liveLink: "https://sai-venkat.vercel.app/",
+        image: "/uploads/PortfolioImage.png",
+        Skills: ["Typescript","ReactJs", "NextJs","TailwindCSS", "EmailJs"]
+    },
+    {
+        id: 4,
+        title: "Patient Referral Dashboard",
+        description: "A freelance Proof of Concept (POC) project for Wekare.ai, demonstrating the intended functionality of a patient referral dashboard.",
+        gitLink: "https://github.com/saivenkat98/wekare360_Patient_Referal_dashboard",
+        liveLink: "",
+        image: "/uploads/PatientReferralDashboard.png",
+        Skills: ["Javascript","ReactJs", "HTML","TailwindCSS","JSON Server"]
+    },
+    {
+        id: 5,
+        title: "Employee Reimbursement Portal",
+        description: "A freelance Proof of Concept (POC) project for University of Iowa, demonstrating my vision for a Employee Reimbursement Portal.",
+        gitLink: "https://github.com/saivenkat98/Reimbursement_Portal",
+        liveLink: "",
+        image: "/uploads/UoI.png",
+        Skills: ["C#", ".NET", "Typescript", "AngularJs", "TailwindCSS", "MySQL"]
+    },
+    {
+        id: 6,
         title: "Personal IMDB",
         description: "A movie review website built with Java, ReactJS, and Bootstrap, for users to browse movies, view details, and submit reviews.",
         gitLink: "https://github.com/saivenkat98/Personal_IMDB",
@@ -37,22 +64,13 @@ export interface ProjectInfo {
         Skills: ["Javascript","ReactJs", "BootstrapCSS", "Java","Springboot","MongoDB"]
     },
     {
-        id: 4,
+        id: 7,
         title: "Medical Research Search Index",
         description: "Aims to provides a searchable index for vast medical research content spanning hundreds of articles.",
         gitLink: "https://github.com/saivenkat98/MedicalResearchSearchIndex",
         liveLink: "",
         image: "/uploads/MRSI.png",
         Skills: ["Javascript","ReactJs", "Java","JSoup"]
-    },
-    {
-        id: 5,
-        title: "My Portfolio",
-        description: "A digital diary of my journey as a software engineer, built with TypeScript and Next.js.",
-        gitLink: "https://github.com/saivenkat98/SaiVenkat",
-        liveLink: "https://sai-venkat.vercel.app/",
-        image: "/uploads/PortfolioImage.png",
-        Skills: ["Typescript","ReactJs", "NextJs","TailwindCSS", "EmailJs"]
     }
   ];
   
