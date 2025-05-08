@@ -30,7 +30,7 @@ export interface ProjectInfo {
     {
         id: 3,
         title: "My Portfolio",
-        description: "My journey as a software engineer, told through this digital diary — built with TypeScript, React and Next.js. You're already in it.",
+        description: "My journey as a software engineer, told through this digital diary, You're already in it! — built with TypeScript and Next.js",
         gitLink: "https://github.com/saivenkat98/SaiVenkat",
         liveLink: "https://sai-venkat.vercel.app/",
         image: "/uploads/PortfolioImage.png",
