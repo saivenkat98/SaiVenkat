@@ -56,6 +56,15 @@ export interface ProjectInfo {
     },
     {
         id: 6,
+        title: "Judge A Book By Its Cover",
+        description: "A ML model to help readers find books by predicting genres from covers images, using neural networks and computer vision.",
+        gitLink: "https://github.com/saivenkat98/JudgeABookByItsCover",
+        liveLink: "",
+        image: "/uploads/JudgeABookByItsCover.png",
+        Skills: ["Python", "Jupyter Notebook", "neural networks", "Pandas", "Matplotlib", "NumPy"]
+    },
+    {
+        id: 7,
         title: "Personal IMDB",
         description: "A movie review website built with Java, ReactJS, and Bootstrap, for users to browse movies, view details, and submit reviews.",
         gitLink: "https://github.com/saivenkat98/Personal_IMDB",
@@ -64,7 +73,7 @@ export interface ProjectInfo {
         Skills: ["Javascript","ReactJs", "BootstrapCSS", "Java","Springboot","MongoDB"]
     },
     {
-        id: 7,
+        id: 8,
         title: "Medical Research Search Index",
         description: "Aims to provides a searchable index for vast medical research content spanning hundreds of articles.",
         gitLink: "https://github.com/saivenkat98/MedicalResearchSearchIndex",

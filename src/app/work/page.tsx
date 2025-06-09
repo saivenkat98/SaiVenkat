@@ -22,9 +22,9 @@ export default function WorkPage() {
             My Experience
           </h2>
           <p className="text-white/60 mb-2">
-            I am a Full-stack developer with 3+ years of experience building
-            scalable microservices, APIs, and responsive UIs using Java, Spring,
-            and modern JavaScript frameworks.
+          I am a Full-Stack Developer with over 4 years of experience building
+          scalable microservices, APIs, and responsive UIs using Java, Spring, and modern JavaScript frameworks,
+          deploying solutions on cloud platforms like GCP and AWS, and leveraging services such as PM2, virtual machines, and S3.
           </p>
           <div className="mt-10">
             <h2 className="text-xl md:text-xl font-medium mb-3">
