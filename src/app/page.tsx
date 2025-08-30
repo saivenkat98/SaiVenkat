@@ -9,14 +9,8 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen">
       <Navbar />
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
-        className="container mx-auto pt-32 px-6"
-      >
-        <div className="max-w-4xl mx-auto">
+      <div className="container mx-auto pt-32 px-6">
+          <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-medium mb-16">Welcome!</h1>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
@@ -123,7 +117,7 @@ export default function AboutPage() {
             </ul>
           </div>
         </div>
-      </motion.div>
+      </div>
     </main>
   );
 }
