@@ -60,7 +60,7 @@ export default function AboutPage() {
                   </li>
                   <li className="relative group flex justify-center">
                     <a
-                      href="https://www.linkedin.com/in/sai-venkat-kumar-rapol-897895159/"
+                      href="https://www.linkedin.com/in/sai-venkat-897895159/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
